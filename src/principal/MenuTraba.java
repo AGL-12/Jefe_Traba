@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import trabas.Empleade;
 import trabas.Jefe;
+import utilidades.Utilidades;
 
 public class MenuTraba {
 
@@ -20,8 +21,8 @@ public class MenuTraba {
 
 		do {
 			menu();
-			opcion = scanner.nextInt();
-			scanner.nextLine(); // Limpiar el buffer del scanner
+			opcion = Utilidades.introduciNumero("Que quiere hacer?");
+//			scanner.nextLine(); // Limpiar el buffer del scanner
 
 			if (empleado == null && opcion > 1 && opcion < 7) {
 				System.out.println("No hay naves registradas.");

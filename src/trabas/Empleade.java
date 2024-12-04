@@ -3,6 +3,7 @@ package trabas;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+
 public class Empleade implements Comparable<Empleade>{
 	// declaracion
 	Scanner scanner = new Scanner(System.in);
