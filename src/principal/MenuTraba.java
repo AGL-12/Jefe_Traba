@@ -22,15 +22,14 @@ public class MenuTraba {
 		do {
 			menu();
 			opcion = Utilidades.introduciNumero("Que quiere hacer?");
-//			scanner.nextLine(); // Limpiar el buffer del scanner
-
+			String lokaso = "dskahfsj";
+			System.out.println(lokaso);
 			if (empleado == null && opcion > 1 && opcion < 7) {
 				System.out.println("No hay naves registradas.");
 			} else {
 				switch (opcion) {
 				case 0: 
 					aniadirEmpleades(empleado, scanner);
-				
 				case 1:
 					visualizarEmpleadeJefe(empleado, scanner);
 					break;
